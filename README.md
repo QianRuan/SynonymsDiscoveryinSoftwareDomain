@@ -6,8 +6,7 @@ create anaconda env according to utils/requirments.txt<br>
 download or perpare your own training and evaluation datasets, save them in the folders trainData, evalData<br>
 download pretrained models and save in the folder models<br>
 ## Training and evaluation: FastText models
-1. modify the hyperparameters in utils/constants.py before training<br>
-2. conduct experiments:<br>
+modify the hyperparameters in utils/constants.py before training<br>
 #### approach 1: training WE from scratch on the domain-specific training corpus
 python main.py --train_ft_all  --eval_sim  --eval_syns_CV 4 <br> 
 (--eval_sim: evaluation method 1, synonyms discovery; <br>
