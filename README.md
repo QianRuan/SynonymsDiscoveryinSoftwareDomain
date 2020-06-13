@@ -2,7 +2,7 @@
 Learning domain-specific word embeddings for synonym discovery in software domain.<br>
 ## Setup: 
 create anaconda env according to utils/requirments.txt<br>
-## Data:
+## Data and pretrained models:
 download or perpare your own training and evaluation datasets, save them in the folders trainData, evalData<br>
 download pretrained models and save in the folder models<br>
 ## Training and evaluation: FastText models
@@ -31,7 +31,7 @@ python main.py --modelName Cbert_github_ts200 --modelPath models/bert/Cbert_gith
 before evaluation, copy the files vocab.txt and bert_config.json from the pretrained bert model to the model's folder<br>
 --modelName: name the model; <br>
 --modelPath :path to the last checkpoint of the bert model<br> 
-## experiment results
+## Experiment results
 evaluation metrics are saved in evaluation_results.xlxs<br> 
 only best models are saved in models/<br> 
 
