@@ -1,0 +1,29 @@
+#create anaconda env to run the project
+
+#conda create -n py37 python=3.7
+#source activate py37
+#conda install -c anaconda pandas=1.0.3
+#conda install -c anaconda numpy=1.18.1
+#conda install -c anaconda gensim=3.8.0
+#conda install -c anaconda openpyxl=2.6.1
+#conda install xlrd=1.2.0
+#conda install -c anaconda scikit-learn=0.22.1
+#pip install pyjarowinkler==1.8
+
+#conda install -y pytorch torchvision cudatoolkit=9.0 -c pytorch
+#conda install -y tensorflow-gpu==1.13.1
+#pip install bert-serving-server==1.9.9
+#pip install bert-serving-client==1.9.9
+
+#conda install -y -c conda-forge git-bash
+
+
+
+#conda install -y -c conda-forge transformers
+#conda install -c conda-forge ipywidgets
+
+
+
+
+
+

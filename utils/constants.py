@@ -17,23 +17,25 @@ SAMPLE_SYNS_PAIRS = ['evalData/eval_sim_at_k/sample0.2_synsPairsNL.txt',
                    'evalData/eval_sim_at_k/sample0.2_synsPairsCodeTrans.txt', 
                    'evalData/eval_sim_at_k/sample0.2_synsPairsFunc2Code.txt']
 
+PL_SYNS_PAIRS = ['evalData/synsPairsCodeTrans.txt','evalData/synsPairsFunc2Code.txt']
+
 TRAINFILE = 'evalData/eval_syns_prediction/syns_TRAIN.csv'
 VALFILE = 'evalData/eval_syns_prediction/syns_VAL.csv'
 TESTFILE = 'evalData/eval_syns_prediction/syns_TEST.csv'
 
 EXCELFILE = 'evaluation_results.xlsx'
 SHEETNAME1 = 'eval_sim_at_k'
-SHEETNAME2 = 'eval_syns_prediction'
+SHEETNAME2 = 'eval_sim_PL'
 SHEETNAME3 = 'eval_syns_CV'
 
 PT_FT_PATH = 'models/pretrained-fasttext/cc.en.300.bin'
 
 #hyperparameters-fatstext
-FT_CORPUS=['github','allS','allM']#,'allS','allM'
-FT_WINDOW=[3]#,5
-FT_SG=[0,1]
-FT_SIZE=[300]#,100,200
-FT_MIN_COUNT=[1,5]#,1,10
+FT_CORPUS=['github']#,'allS','allM'
+FT_WINDOW=[5]#,5,10
+FT_SG=[1]
+FT_SIZE=[768]#,100,768
+FT_MIN_COUNT=[5]#,1,10
 FT_EPOCHS=[5]#,8,12,1
 
 
