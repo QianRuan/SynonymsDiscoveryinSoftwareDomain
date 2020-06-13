@@ -32,8 +32,8 @@ before evaluation, copy the files vocab.txt and bert_config.json from the pretra
 --modelName: name the model; <br>
 --modelPath :path to the last checkpoint of the bert model<br> 
 ## experiment results
-evaluation metrics are saved in evaluation_results.xlxs
-only best models are saved in models/
+evaluation metrics are saved in evaluation_results.xlxs<br> 
+only best models are saved in models/<br> 
 
 
 
