@@ -27,6 +27,9 @@ bash bert_c_train.sh<br>
 python main.py --modelName Cbert_github_ts200 --modelPath models/bert/Cbert_github_ts200/model.ckpt-200 --eval_sim_bert --eval_syns_CV 4<br>
 (--modelName: name the model; <br>
 --modelPath :path to the last checkpoint of the bert model)<br> 
+## experiment results
+evaluation metrics are saved in evaluation_results.xlxs
+only best models are saved in models/
 
 
 
