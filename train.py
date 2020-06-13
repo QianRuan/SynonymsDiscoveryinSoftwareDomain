@@ -38,14 +38,15 @@ def train_fasttext(corpusPath,corpusName,window,size,sg,epochs,min_count):
     #check if the model  already exists
     dirPath = '/'.join(modelPath.split('/')[:-1])
     if os.path.exists(dirPath):
-        print("The model already exists! ",modelName,'\n')
+        print("The model already exists! ",modelName)
         return None,None,None
         
     #if not, train
     else:  
+        print('#########################################################################')
         print("Ready to train the model ",modelName)
         df_cols=['modelName','total_duration','reading_corpus_duration',
-                 'building_vocab_duration','training_duration','corpus_name','total_examples'
+                 'building_vocab_duration','training_duration','corpus_name','total_examples',
                  'window','size','sg','min_n','max_n','negative','word_ngrams','epochs','min_count','vocab_size']
                 
         rows=[]
@@ -110,11 +111,12 @@ def c_train_fasttext(corpusPath,corpusName,window,size,sg,epochs,min_count):
     dirPath = '/'.join(modelPath.split('/')[:-1])
     
     if os.path.exists(dirPath):
-        print("The model already exists!",modelName,'\n')
+        print("The model already exists!",modelName)
         return None,None,None
         
     #if not, train
     else:  
+        print('#########################################################################')
         print("Ready to train the model ",modelName)
         #load the pretrained fasttext model
         model=load_bin_model(ROOT_DIR+'/'+PT_FT_PATH)
@@ -124,7 +126,7 @@ def c_train_fasttext(corpusPath,corpusName,window,size,sg,epochs,min_count):
         
             
         df_cols=['modelName','total_duration','reading_corpus_duration',
-                 'building_vocab_duration','training_duration','corpus_name','total_examples'
+                 'building_vocab_duration','training_duration','corpus_name','total_examples',
                  'window','size','sg','min_n','max_n','negative','word_ngrams','epochs','min_count','vocab_size']
                 
         rows=[]
