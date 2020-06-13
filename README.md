@@ -26,7 +26,7 @@ bash bert_c_train.sh<br>
 #### evaluation
 
 bash bert_eval.sh or <br>
-python main.py --modelName Cbert_github_ts200 --modelPath models/bert/Cbert_github_ts200/model.ckpt-200 --eval_sim_bert --eval_syns_CV 4<br>
+python main.py --modelName Cbert_github_ts200 --modelPath models/bert/Cbert_github_ts200/model.ckpt-200 --eval_sim_bert --eval_syns_CV_bert 4<br>
 <br>
 before evaluation, copy the files vocab.txt and bert_config.json from the pretrained bert model to the model's folder<br>
 --modelName: name the model; <br>
