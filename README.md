@@ -9,8 +9,9 @@ download pretrained models and save in the folder models<br>
 modify the hyperparameters in utils/constants.py before training<br>
 #### approach 1: training WE from scratch on the domain-specific training corpus
 python main.py --train_ft_all  --eval_sim  --eval_syns_CV 4 <br> 
-(--eval_sim: evaluation method 1, synonyms discovery; <br>
---eval_syns_CV 4 :evaluation method 2, synonym pairs perdiction, do cross-validation with 4 folds)<br> 
+<br>
+--eval_sim: evaluation method 1, synonyms discovery; <br>
+--eval_syns_CV 4 :evaluation method 2, synonym pairs perdiction, do cross-validation with 4 folds<br> 
 #### approach 2: domain adaption based on the pretrained model
 python main.py --c_train_ft_all  --eval_sim  --eval_syns_CV 4
 ## Training and evaluation: BERT models
@@ -23,10 +24,13 @@ bash bert_train.sh<br>
 #### approach 2: domain adaption based on the pretrained model
 bash bert_c_train.sh<br>
 #### evaluation
-(before evaluation, copy the files vocab.txt and bert_config.json from the pretrained bert model to the model's folder)<br>
+
+bash bert_eval.sh or <br>
 python main.py --modelName Cbert_github_ts200 --modelPath models/bert/Cbert_github_ts200/model.ckpt-200 --eval_sim_bert --eval_syns_CV 4<br>
-(--modelName: name the model; <br>
---modelPath :path to the last checkpoint of the bert model)<br> 
+<br>
+before evaluation, copy the files vocab.txt and bert_config.json from the pretrained bert model to the model's folder<br>
+--modelName: name the model; <br>
+--modelPath :path to the last checkpoint of the bert model<br> 
 ## experiment results
 evaluation metrics are saved in evaluation_results.xlxs
 only best models are saved in models/
