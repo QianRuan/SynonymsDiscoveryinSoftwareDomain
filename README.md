@@ -1,4 +1,4 @@
-# SynonymsDiscoveryinSoftwareDomain
+# Synonyms-Discovery-in-Software-Domain
 Learning domain-specific word embeddings for synonym discovery in software domain.<br>
 ## Setup: 
 create anaconda env according to utils/requirments.txt<br>
