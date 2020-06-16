@@ -399,7 +399,7 @@ def evaluate_sim_at_k_bert(model, modelName, modelPath, domain_vocab, syns_dict,
                                      #'-show_tokens_to_client',
                                      #'-pooling_strategy', 'NONE',
                                      #'-cpu'
-                                    '-num_worker', '10'])
+                                    '-num_worker', '1'])
     server = BertServer(args)
     server.start()
     bc = BertClient()
@@ -885,7 +885,7 @@ def evaluate_syns_prediction_CV_bert(model,modelName,modelPath,train,val,test,ex
                                      #'-show_tokens_to_client',
                                      #'-pooling_strategy', 'NONE',
                                      #'-cpu'
-                                    '-num_worker', '10'])
+                                    '-num_worker', '1'])
     server = BertServer(args)
     server.start()
     bc = BertClient()
