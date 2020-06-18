@@ -19,9 +19,6 @@
 
 
 
-#conda install -y -c conda-forge transformers
-#conda install -c conda-forge ipywidgets
-
 
 
 
